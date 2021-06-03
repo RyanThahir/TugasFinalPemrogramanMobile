@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/dialog_add">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create your own quote"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:fontFamily="@font/manrope_bold"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/daquote"
+            android:layout_marginTop="10dp"
+            android:hint="Enter your quote"
+            android:ems="10"
+            android:inputType="text"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/daauthor"
+            android:layout_marginTop="10dp"
+            android:hint="Enter the author"
+            android:ems="10"
+            android:inputType="text"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                android:text="Cancel"
+                android:textAlignment="center"/>
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:text="Save"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/btnShare"
+            android:layout_marginTop="20dp"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+            app:icon = "@drawable/ic_share"
+            android:text="Share custom quotes"/>
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
