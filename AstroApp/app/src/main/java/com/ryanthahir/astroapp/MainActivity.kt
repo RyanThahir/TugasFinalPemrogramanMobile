@@ -41,26 +41,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    /*private fun showAlertDialogAdd() {
-        val alert = AlertDialog.Builder(this)
-        val editText1 = EditText(applicationContext)
-        editText1.hint = "Enter your text"
-        alert.setTitle("New Quote")
-        alert.setView(editText1)
-        val editText2 = EditText(applicationContext)
-        editText2.hint = "Enter the author"
-        alert.setView(editText2)
-        val user = Saved(0,editText1.toString(),editText2.toString())
-        alert.setPositiveButton("Save") { dialog, _ ->
-            savedViewModel.insertSaved(user)
-            dialog.dismiss()
-        }
-        alert.setNegativeButton("Cancel") { dialog, _ ->
-            dialog.dismiss()
-        }
-        alert.show()
-    }*/
-
     private fun showAlertMenu(saved: Saved) {
         val items = arrayOf("Edit", "Delete")
         val builder =
